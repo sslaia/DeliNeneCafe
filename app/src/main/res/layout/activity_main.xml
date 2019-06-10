@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/BackgroundPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/food_background" />
+
+            <TextView
+                android:id="@+id/business_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/business_feature"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/business_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/business_feature"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/rye"
+                android:padding="16dp"
+                android:text="@string/business_name"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/opening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/business_name"
+                android:layout_centerHorizontal="true"
+                android:text="@string/opening"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/opening"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="16dp"
+                android:text="@string/hours"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/business_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hours"
+                android:adjustViewBounds="true"
+                android:paddingTop="16dp"
+                app:srcCompat="@drawable/delinene" />
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="200dp"
+                android:layout_height="265dp"
+                android:layout_below="@id/business_photo"
+                android:layout_alignParentStart="true"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="16dp"
+                app:srcCompat="@drawable/delinene_map"
+                android:onClick="showMap" />
+
+            <TextView
+                android:id="@+id/business_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/map"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/map"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/business_contact"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/business_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/business_contact"
+                android:layout_toRightOf="@id/map"
+                android:paddingStart="8dp"
+                android:paddingBottom="10dp"
+                android:text="@string/business_address"/>
+
+            <ImageView
+                android:id="@+id/twitter_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/business_address"
+                android:layout_toRightOf="@id/map"
+                android:paddingBottom="10dp"
+                app:srcCompat="@drawable/twitter_icon" />
+
+            <TextView
+                android:id="@+id/twitter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/business_address"
+                android:layout_toRightOf="@id/twitter_icon"
+                android:paddingStart="8dp"
+                android:paddingBottom="10dp"
+                android:text="@string/twitter_text" />
+
+            <ImageView
+                android:id="@+id/facebook_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/twitter_icon"
+                android:layout_toRightOf="@id/map"
+                android:paddingBottom="10dp"
+                app:srcCompat="@drawable/facebook_icon" />
+
+            <TextView
+                android:id="@+id/facebook_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/twitter_text"
+                android:layout_toRightOf="@id/facebook_icon"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="16dp"
+                android:text="@string/facebook_text" />
+
+            <ImageView
+                android:id="@+id/telephone_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/facebook_icon"
+                android:layout_toRightOf="@id/map"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:srcCompat="@drawable/telephone_icon" />
+
+            <TextView
+                android:id="@+id/telephone_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/facebook_text"
+                android:layout_toRightOf="@id/telephone_icon"
+                android:paddingStart="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/telephone_text" />
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/telephone_icon"
+                android:layout_toRightOf="@id/map"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:srcCompat="@drawable/email_icon" />
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/telephone_text"
+                android:layout_toRightOf="@id/email_icon"
+                android:paddingStart="8dp"
+                android:paddingBottom="16dp"
+                android:text="@string/email_text" />
+
+            <TextView
+                android:id="@+id/fun_fact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/map"
+                android:padding="16dp"
+                android:text="@string/fun_fact"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/do_you_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fun_fact"
+                android:text="@string/do_you_know"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:fontFamily="casual" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

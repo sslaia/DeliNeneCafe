@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Deli Nene Cafe</string>
+    <string name="business_feature">The only child friendly Café and Bistro in Beckenham with dedicated kids play area</string>
+    <string name="business_name">DELI NENE</string>
+    <string name="opening">Opening hours</string>
+    <string name="hours">Mo-Sun: 08:00 - 22:00</string>
+    <string name="business_contact">Contact</string>
+    <string name="business_address">52-54 High St, Beckenham BR3 1AY</string>
+    <string name="twitter_text">delinene</string>
+    <string name="facebook_text">delinene</string>
+    <string name="telephone_text">020 887 9987</string>
+    <string name="email_text">info@delinene.com</string>
+    <string name="fun_fact">Thank God, it\'s a fact</string>
+    <string name="do_you_know">Opposite the Cafe is the historical St. George\'s Church and Beckenham Green Park. The best place to enjoy the wonderful sight and fresh air.</string>
+</resources>
